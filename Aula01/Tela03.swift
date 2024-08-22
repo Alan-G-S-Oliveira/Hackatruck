@@ -29,7 +29,8 @@ struct Tela03: View {
                             Text("Seguindo").fontWeight(.light)
                         }
                     }
-                    Text("Editar perfil").frame(width: 225, height: 30).background(.gray)
+                    Text("Editar perfil").frame(width: 225, height: 30).background(Color.gray.opacity(0.4))
+                    
                 }
             }
             VStack (alignment: .leading){
@@ -37,38 +38,38 @@ struct Tela03: View {
                 Text("sijdw wkdjue iswjdu sowduy")
             }.padding()
             HStack {
-                Rectangle().frame(width: 30, height: 30).foregroundColor(.gray).padding()
+                Rectangle().frame(width: 30, height: 30).foregroundColor(Color.gray.opacity(0.4)).padding()
                 Spacer()
-                Rectangle().frame(width: 30, height: 30).foregroundColor(.gray).padding()
+                Rectangle().frame(width: 30, height: 30).foregroundColor(Color.gray.opacity(0.4)).padding()
                 Spacer()
-                Rectangle().frame(width: 30, height: 30).foregroundColor(.gray).padding()
+                Rectangle().frame(width: 30, height: 30).foregroundColor(Color.gray.opacity(0.4)).padding()
             }.padding()
         }
         HStack {
             Spacer()
-            Rectangle().frame(width: 115, height: 115).foregroundColor(.gray)
+            Rectangle().frame(width: 115, height: 115).foregroundColor(Color.gray.opacity(0.4))
             Spacer()
-            Rectangle().frame(width: 115, height: 115).foregroundColor(.gray)
+            Rectangle().frame(width: 115, height: 115).foregroundColor(Color.gray.opacity(0.4))
             Spacer()
-            Rectangle().frame(width: 115, height: 115).foregroundColor(.gray)
-            Spacer()
-        }
-        HStack {
-            Spacer()
-            Rectangle().frame(width: 115, height: 115).foregroundColor(.gray)
-            Spacer()
-            Rectangle().frame(width: 115, height: 115).foregroundColor(.gray)
-            Spacer()
-            Rectangle().frame(width: 115, height: 115).foregroundColor(.gray)
+            Rectangle().frame(width: 115, height: 115).foregroundColor(Color.gray.opacity(0.4))
             Spacer()
         }
         HStack {
             Spacer()
-            Rectangle().frame(width: 115, height: 115).foregroundColor(.gray)
+            Rectangle().frame(width: 115, height: 115).foregroundColor(Color.gray.opacity(0.4))
             Spacer()
-            Rectangle().frame(width: 115, height: 115).foregroundColor(.gray)
+            Rectangle().frame(width: 115, height: 115).foregroundColor(Color.gray.opacity(0.4))
             Spacer()
-            Rectangle().frame(width: 115, height: 115).foregroundColor(.gray)
+            Rectangle().frame(width: 115, height: 115).foregroundColor(Color.gray.opacity(0.4))
+            Spacer()
+        }
+        HStack {
+            Spacer()
+            Rectangle().frame(width: 115, height: 115).foregroundColor(Color.gray.opacity(0.4))
+            Spacer()
+            Rectangle().frame(width: 115, height: 115).foregroundColor(Color.gray.opacity(0.4))
+            Spacer()
+            Rectangle().frame(width: 115, height: 115).foregroundColor(Color.gray.opacity(0.4))
             Spacer()
         }
         Spacer()
