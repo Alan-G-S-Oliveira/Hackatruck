@@ -12,7 +12,7 @@ struct Tela03: View {
         VStack (alignment: .leading){
             Text("username").font(.title).padding()
             HStack {
-                Image(.images).resizable().aspectRatio(contentMode: .fit).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/).frame(width: 150)
+                Image(.images2).resizable().aspectRatio(contentMode: .fit).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/).frame(width: 150)
 
                 VStack {
                     HStack {

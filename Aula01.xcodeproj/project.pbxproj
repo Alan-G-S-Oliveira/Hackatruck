@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03850C692C77EA2800B29936 /* hackatruck.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03850C682C77EA2800B29936 /* hackatruck.jpeg */; };
+		03850C6B2C77EC6800B29936 /* Tela04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03850C6A2C77EC6700B29936 /* Tela04.swift */; };
+		03850C6D2C77ED1200B29936 /* Captura de Tela 2023-01-18 às 22.59.48.png in Resources */ = {isa = PBXBuildFile; fileRef = 03850C6C2C77ED1200B29936 /* Captura de Tela 2023-01-18 às 22.59.48.png */; };
+		03850C6F2C77ED2000B29936 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03850C6E2C77ED2000B29936 /* logo.png */; };
+		03850C712C77ED3100B29936 /* truck.png in Resources */ = {isa = PBXBuildFile; fileRef = 03850C702C77ED3100B29936 /* truck.png */; };
 		03E038EC2C76A5DB0048FAF4 /* Aula01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E038EB2C76A5DB0048FAF4 /* Aula01App.swift */; };
 		03E038EE2C76A5DB0048FAF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E038ED2C76A5DB0048FAF4 /* ContentView.swift */; };
 		03E038F02C76A5DE0048FAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E038EF2C76A5DE0048FAF4 /* Assets.xcassets */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03850C682C77EA2800B29936 /* hackatruck.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hackatruck.jpeg; path = ../../../Downloads/hackatruck.jpeg; sourceTree = "<group>"; };
+		03850C6A2C77EC6700B29936 /* Tela04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela04.swift; sourceTree = "<group>"; };
+		03850C6C2C77ED1200B29936 /* Captura de Tela 2023-01-18 às 22.59.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Captura de Tela 2023-01-18 às 22.59.48.png"; path = "../../../Downloads/Captura de Tela 2023-01-18 às 22.59.48.png"; sourceTree = "<group>"; };
+		03850C6E2C77ED2000B29936 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../Downloads/logo.png; sourceTree = "<group>"; };
+		03850C702C77ED3100B29936 /* truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truck.png; sourceTree = "<group>"; };
 		03E038E82C76A5DB0048FAF4 /* Aula01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aula01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E038EB2C76A5DB0048FAF4 /* Aula01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula01App.swift; sourceTree = "<group>"; };
 		03E038ED2C76A5DB0048FAF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +110,10 @@
 		03E038EA2C76A5DB0048FAF4 /* Aula01 */ = {
 			isa = PBXGroup;
 			children = (
+				03850C702C77ED3100B29936 /* truck.png */,
+				03850C6E2C77ED2000B29936 /* logo.png */,
+				03850C6C2C77ED1200B29936 /* Captura de Tela 2023-01-18 às 22.59.48.png */,
+				03850C682C77EA2800B29936 /* hackatruck.jpeg */,
 				03E038EB2C76A5DB0048FAF4 /* Aula01App.swift */,
 				03E038ED2C76A5DB0048FAF4 /* ContentView.swift */,
 				03E038EF2C76A5DE0048FAF4 /* Assets.xcassets */,
@@ -107,6 +121,7 @@
 				03E038F12C76A5DE0048FAF4 /* Preview Content */,
 				03E039152C76A96B0048FAF4 /* Tela02.swift */,
 				03E039192C76B13A0048FAF4 /* Tela03.swift */,
+				03850C6A2C77EC6700B29936 /* Tela04.swift */,
 			);
 			path = Aula01;
 			sourceTree = "<group>";
@@ -240,8 +255,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03850C692C77EA2800B29936 /* hackatruck.jpeg in Resources */,
 				03E0391C2C76BF000048FAF4 /* Yumekonormal.jpeg in Resources */,
+				03850C712C77ED3100B29936 /* truck.png in Resources */,
+				03850C6F2C77ED2000B29936 /* logo.png in Resources */,
 				03E038F32C76A5DE0048FAF4 /* Preview Assets.xcassets in Resources */,
+				03850C6D2C77ED1200B29936 /* Captura de Tela 2023-01-18 às 22.59.48.png in Resources */,
 				03E038F02C76A5DE0048FAF4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +290,7 @@
 				03E038EE2C76A5DB0048FAF4 /* ContentView.swift in Sources */,
 				03E038EC2C76A5DB0048FAF4 /* Aula01App.swift in Sources */,
 				03E039162C76A96B0048FAF4 /* Tela02.swift in Sources */,
+				03850C6B2C77EC6800B29936 /* Tela04.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
