@@ -11,9 +11,9 @@ struct ContentView: View {
     var body: some View {
         TabView {
             InicioTela().tabItem{Label("Início", systemImage: "house")}
-            InicioTela().tabItem{Label("Estatísticas", systemImage: "chart.xyaxis.line")}
-            InicioTela().tabItem{Label("Conselheira", systemImage: "sparkles")}
-            InicioTela().tabItem{Label("Opções", systemImage: "gearshape.fill")}
+            EstatisticasTela().tabItem{Label("Estatísticas", systemImage: "chart.xyaxis.line")}
+            ConselheiraTela().tabItem{Label("Conselheira", systemImage: "sparkles")}
+            OpcoesTela().tabItem{Label("Opções", systemImage: "gearshape.fill")}
         }
     }
 }
