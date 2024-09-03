@@ -1,0 +1,283 @@
+[
+    {
+        "id": "c7975203a1b127c0",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6237df306532e081",
+        "type": "http in",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "url": "/nome",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "7c75332730e517e5"
+            ]
+        ]
+    },
+    {
+        "id": "ac45355c8d20df8b",
+        "type": "http response",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 650,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7c75332730e517e5",
+        "type": "cloudantplus in",
+        "z": "c7975203a1b127c0",
+        "name": "alan",
+        "cloudant": "a3b3b4d3918ab506",
+        "database": "meubanco321",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 470,
+        "y": 140,
+        "wires": [
+            [
+                "ac45355c8d20df8b"
+            ]
+        ]
+    },
+    {
+        "id": "f6a87effdd595e34",
+        "type": "http in",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "url": "/salvarnome",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "dbaca3553f2fbeb0"
+            ]
+        ]
+    },
+    {
+        "id": "153a7d970f087f30",
+        "type": "cloudantplus out",
+        "z": "c7975203a1b127c0",
+        "name": "gabriel",
+        "cloudant": "a3b3b4d3918ab506",
+        "database": "meubanco321",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 530,
+        "y": 300,
+        "wires": [
+            [
+                "fb7a317b02a2fa5f"
+            ]
+        ]
+    },
+    {
+        "id": "fb7a317b02a2fa5f",
+        "type": "http response",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "42a5fa59037310e5",
+        "type": "http in",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "url": "/deletarnome",
+        "method": "delete",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 440,
+        "wires": [
+            [
+                "4c34a5cfb13b062d"
+            ]
+        ]
+    },
+    {
+        "id": "4c34a5cfb13b062d",
+        "type": "cloudantplus out",
+        "z": "c7975203a1b127c0",
+        "name": "oliveira",
+        "cloudant": "a3b3b4d3918ab506",
+        "database": "meubanco321",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 460,
+        "y": 440,
+        "wires": [
+            [
+                "f585131f2050b7d3"
+            ]
+        ]
+    },
+    {
+        "id": "f585131f2050b7d3",
+        "type": "http response",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 650,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bdf2b777a5d67d2f",
+        "type": "http in",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "url": "/atualizarnome",
+        "method": "put",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "d9c5857b03f30ce2"
+            ]
+        ]
+    },
+    {
+        "id": "d9c5857b03f30ce2",
+        "type": "cloudantplus out",
+        "z": "c7975203a1b127c0",
+        "name": "silva",
+        "cloudant": "a3b3b4d3918ab506",
+        "database": "meubanco321",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 470,
+        "y": 380,
+        "wires": [
+            [
+                "8a8c427a9f64abb2"
+            ]
+        ]
+    },
+    {
+        "id": "8a8c427a9f64abb2",
+        "type": "http response",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 650,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d577f039950bdbc7",
+        "type": "split",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "153a7d970f087f30"
+            ]
+        ]
+    },
+    {
+        "id": "dbaca3553f2fbeb0",
+        "type": "switch",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "istype",
+                "v": "array",
+                "vt": "array"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "5f03f122f6890e82"
+            ],
+            [
+                "d577f039950bdbc7"
+            ]
+        ]
+    },
+    {
+        "id": "5f03f122f6890e82",
+        "type": "cloudantplus out",
+        "z": "c7975203a1b127c0",
+        "name": "gabriel",
+        "cloudant": "a3b3b4d3918ab506",
+        "database": "meubanco321",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "a33f604561ddeb25"
+            ]
+        ]
+    },
+    {
+        "id": "a33f604561ddeb25",
+        "type": "http response",
+        "z": "c7975203a1b127c0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a3b3b4d3918ab506",
+        "type": "cloudantplus",
+        "host": "https://8685b21f-dcdc-4864-a9bc-84e5121ccc12-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    }
+]
